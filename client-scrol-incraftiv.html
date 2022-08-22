@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/shortcodes.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    
+    <!-- owlCarousel cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="index.css">
+    <!-- owlCarousel cdn link -->
+
+</head>
+
+<body>
+
+<!-- ttm client carousel start -->
+    <div class="ttm-row our-partner-section ttm-bgcolor-skincolor mt_90 res-991-mt-0 clearfix ">
+        <div class="owl-carousel owl-theme">
+            <div class="client-box ttm-box-view-boxed-logo ">
+                <div class="client ">
+                    <div class="ttm-client-logo-tooltip" data-tooltip="Starsgyan">
+                        <img class="img-fluid " src="images/client/starsgyan_logo.svg" alt="Starsgyan-logo">
+                    </div>
+                </div>
+            </div>
+            <div class="client-box ttm-box-view-boxed-logo ">
+                <div class="client ">
+                    <div class="ttm-client-logo-tooltip" data-tooltip="V2 Retail">
+                        <img class="img-fluid" src="images/client/v2.png" alt=" V2 Retail">
+                    </div>
+                </div>
+            </div>
+            <div class="client-box ttm-box-view-boxed-logo ">
+                <div class="client ">
+                    <div class="ttm-client-logo-tooltip" data-tooltip="42nite">
+                        <img class="img-fluid" src="images/client/42nite-logo.png" alt="42nite" style="height: 60px;">
+                    </div>
+                </div>
+            </div>
+            <div class="client-box ttm-box-view-boxed-logo ">
+                <div class="client ">
+                    <div class="ttm-client-logo-tooltip" data-tooltip="Sankalp">
+                        <img class="img-fluid" src="images/client/sankalp-logo.png" alt="Sankalp" style="height: 70px;">
+                    </div>
+                </div>
+            </div>
+            <div class="client-box ttm-box-view-boxed-logo ">
+                <div class="client ">
+                    <div class="ttm-client-logo-tooltip" data-tooltip="Routespring">
+                        <img class="img-fluid" src="images/client/gallop-logo-1.png" alt="Routespring" style="margin-top: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ttm client carousel End -->
+
+</body>
+
+<!-- cdn link of owl-carousel and jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- cdn link of owl-carousel and jquery -->
+
+<!-- script fow owl-carousel autoplay -->
+<script>
+
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items: 5,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true
+    });
+
+</script>
+<!-- script fow owl-carousel autoplay -->
+
+</html>
