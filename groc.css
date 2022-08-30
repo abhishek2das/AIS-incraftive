@@ -1339,3 +1339,6 @@ li a {
   opacity: 0.90 !important;
   text-shadow: 3px 3px 5px  rgb(134, 163, 241);
 }
+.slick-slider{
+  -webkit-user-select: auto !important; 
+}
