@@ -551,7 +551,7 @@
                                 <li><i class="fa fa-check"></i>View, Add or Remove department location</li>
                             </ul>
                         </div>
-                        <div class="col-6 img-fluid " onclick="imag()">
+                        <div class="col-6 img-fluid " >
                             <div class="admin_slider">
                                 <div><img src="./assets/AIS Admin Panel Screens/Frame 713.png" alt="AIS Admin Panel"
                                         class="img-fluid float-right"></div>
@@ -567,6 +567,8 @@
                                         class="img-fluid float-right img-container"></div>
                             </div>
                             <!-- <img src="assets/Admin Panel.png" class="img-fluid" alt=""> -->
+                            <div><i class="bi bi-zoom-in" onclick="imag()"></i></div>
+
                         </div>
                         <div class="col-3">
                             <h5><strong>Audit management</strong></h5>
@@ -672,7 +674,7 @@
                             <!-- <p class="lead"> <i class="fa fa-check"></i> Various Payment Modes</p> -->
                             <!-- <p class="lead"> <i class="fa fa-check"></i> Live tracking of Order</p> -->
                         </div>
-                        <div class="col-6 img-fluid text-center"  onclick="imag1()">
+                        <div class="col-6 img-fluid text-center" >
                             <div class="reports_slide">
                                 <div><img src="./assets/AIS IMGG/Frame 829.png" class="img-fluid ais_img "
                                         alt="AIS IMGG"></div>
@@ -689,6 +691,8 @@
                                 <div><img src="./assets/AIS IMGG/Frame 839.png" class="img-fluid ais_img "
                                         alt="AIS IMGG"></div>
                             </div>
+                            <div><i class="bi bi-zoom-in" onclick="imag1()"></i></div>
+
                         </div>
                         <div class="col-3 mt-5">
                             <p class="lead"> <i class="fa fa-check margin-ais-top "></i> Departmental Charts</p>
@@ -1211,6 +1215,7 @@
             $(".pop-up-image").hide()
             $("#fullBody").css({ filter: "blur(0px)" });
             $("html").css({ overflow: "auto" });
+            $("#footer").show()
 
         }
         function imag(src) {
@@ -1219,6 +1224,7 @@
             }, 2500);
             $("#fullBody").css({ filter: "blur(6px)" });
             $("html").css({ overflow: "hidden" });
+            $("#footer").hide()
         }
         $(document).ready(() => {
             $('.carousel').carousel({

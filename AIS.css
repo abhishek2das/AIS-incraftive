@@ -1349,3 +1349,9 @@ li a {
 .carousel-indicators .active {
     background-color: #1806dc !important;
 } 
+.bi-zoom-in::before {
+  content: "\f62c";
+  position: absolute;
+    right: 48%;
+    bottom: 48px;
+}
