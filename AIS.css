@@ -1342,3 +1342,10 @@ li a {
 .slick-slider{
   -webkit-user-select: auto !important; 
 }
+.img_wid{
+  width: 100%;
+}
+
+.carousel-indicators .active {
+    background-color: #1806dc !important;
+} 
