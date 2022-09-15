@@ -1355,3 +1355,11 @@ li a {
     right: 48%;
     bottom: 48px;
 }
+.carousel-indicators {
+  bottom: 70px !important;
+}
+.bi-x-lg::before {
+  font-size: 26px !important;
+  content: "\f659";
+  padding: 4px !important;
+}
