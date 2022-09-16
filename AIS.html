@@ -19,7 +19,7 @@
 
     <!-- responsive -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 
     <!-- all link -->
@@ -48,7 +48,7 @@
 
     <!-- REVOLUTION LAYERS STYLES -->
 
-    <link rel="stylesheet" type="text/css" href="revolution/css/rs6.css">
+    <!-- <link rel="stylesheet" type="text/css" href="revolution/css/rs6.css"> -->
 
     <!-- prettyphoto -->
     <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
@@ -304,7 +304,7 @@
 
                                             <li class="active"><a href="#">Product Solutions</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="./groccery3.html">Audit Information System</a></li>
+                                                    <li><a href="./AIS.html">Audit Information System</a></li>
                                                 </ul>
                                             </li>
                                             <li class=""><a href="index.html#pf">Portfolio</a></li>
@@ -571,7 +571,7 @@
                                     <li><i class="fa fa-check"></i>View, Add or Remove department location</li>
                                 </ul>
                             </div>
-                            <div class="col-6 img-fluid " >
+                            <div class="col-6 img-fluid ">
                                 <div class="admin_slider">
                                     <div><img src="./assets/AIS Admin Panel Screens/Frame 713.png" alt="AIS Admin Panel"
                                             class="img-fluid float-right" onclick="imag_show()"></div>
@@ -697,7 +697,7 @@
                                 <!-- <p class="lead"> <i class="fa fa-check"></i> Various Payment Modes</p> -->
                                 <!-- <p class="lead"> <i class="fa fa-check"></i> Live tracking of Order</p> -->
                             </div>
-                            <div class="col-6 img-fluid text-center" >
+                            <div class="col-6 img-fluid text-center">
                                 <div class="reports_slide">
                                     <div><img src="./assets/AIS IMGG/Frame 829.png" class="img-fluid ais_img "
                                             alt="AIS IMGG" onclick="imag1()"></div>
@@ -1253,7 +1253,7 @@
 
         //////////////////////////////////////////////////////
         // $(".pop-up-image").hide()
-        let imageSlider = false 
+        let imageSlider = false
 
         function closethis() {
             $(".pop-up-image").hide()
@@ -1264,9 +1264,9 @@
 
         }
         function imag_show(src) {
-            setTimeout(() => {
-                $(".pop-up-image").show()
-            }, 2500);
+
+            $(".pop-up-image").show()
+
             $("#fullBody").css({ filter: "blur(6px)" });
             $("html").css({ overflow: "hidden" });
             $("#footer").hide()
@@ -1289,9 +1289,9 @@
         }
 
         function imag1() {
-            setTimeout(() => {
-                $(".pop-up-image-report").show()
-            }, 2500);
+
+            $(".pop-up-image-report").show()
+
             $("#fullBody").css({ filter: "blur(6px)" });
             $("html").css({ overflow: "hidden" });
             imageSlider = true
@@ -1305,14 +1305,14 @@
 
 
         $(document).keyup(function (e) {
-            
-            if(imageSlider === true){
-                if (e.key === "Escape") { // escape key maps to keycode `27`
-                closethis1()
-                closethis()
-            imageSlider = false
 
-            }
+            if (imageSlider === true) {
+                if (e.key === "Escape") { // escape key maps to keycode `27`
+                    closethis1()
+                    closethis()
+                    imageSlider = false
+
+                }
             }
         });
 ///////////////////////////////////////////////////////// 
