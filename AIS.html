@@ -34,7 +34,8 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
 
     <!-- owl-carousel -->
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="./owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owl/owl.theme.default.min.css">
 
     <!-- fontawesome -->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
@@ -557,7 +558,7 @@
                     <li class="nav-item text-center mx-auto mb-5">
                         <a class="nav-link btn test superadminpanel btn-outline-primary active mt-5 "
                             id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-                            aria-controls="pills-home" aria-selected="true">Admin Panel</a>
+                            aria-controls="pills-home" aria-selected="true" onclick="adminPanel()">Admin Panel</a>
                     </li>
                     <!-- <li class="nav-item mx-auto mb-5">
                     <a class="nav-link btn test superadminpanel btn-outline-primary  mt-5" id="pills-profile-tab" data-toggle="pill"
@@ -567,12 +568,12 @@
                     <li class="nav-item mx-auto mb-5">
                         <a class="nav-link btn test delivery btn-outline-primary  mt-5" id="pills-contact-tab"
                             data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
-                            aria-selected="false"> Mobile Application</a>
+                            aria-selected="false" onclick="MobileClick()"> Mobile Application</a>
                     </li>
                     <li class="nav-item mx-auto mb-5">
                         <a class="nav-link btn test customerapp btn-outline-primary  mt-5" id="pills-customer-tab"
                             data-toggle="pill" href="#pills-customer" role="tab" aria-controls="pills-customer"
-                            aria-selected="false">Reports Panel</a>
+                            aria-selected="false" onclick="reportsPanel()">Reports Panel</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
@@ -596,7 +597,7 @@
                                 </ul>
                             </div>
                             <div class="col-6 img-fluid ">
-                                <div class="admin_slider">
+                                <div id="admin_slider" class="owl-carousel owl-theme">
                                     <div><img src="./assets/AIS Admin Panel Screens/Frame_1.png" alt="AIS Admin Panel"
                                             class="img-fluid float-right" onclick="imag_show()"></div>
                                     <div><img src="assets/AIS Admin Panel Screens/Frame_2.png" alt="AIS Admin Panel"
@@ -677,7 +678,7 @@
                                 <!-- <p class="lead"> <i class="fa fa-check"></i>AI-based Route Plans</p> -->
                             </div>
                             <div class="col-6 img-fluid text-center">
-                                <div class="ais_auditing">
+                                <div id="MobileSlider" class="owl-carousel owl-theme">
                                     <div><img src="./assets/AIS MOBILE SCREEN/frame-1.png"
                                             class="img-fluid ais_img_size" alt=""></div>
                                     <div><img src="./assets/AIS MOBILE SCREEN/frame-2.png"
@@ -726,7 +727,7 @@
                                 <!-- <p class="lead"> <i class="fa fa-check"></i> Live tracking of Order</p> -->
                             </div>
                             <div class="col-6 img-fluid text-center">
-                                <div class="reports_slide">
+                                <div id="reports_slide" class="owl-carousel owl-theme">
                                     <div><img src="./assets/AIS IMGG/Frame_1.png" class="img-fluid ais_img "
                                             alt="AIS IMGG" onclick="imag1()"></div>
                                     <div><img src="./assets/AIS IMGG/Frame_2.png" class="img-fluid ais_img "
@@ -796,9 +797,9 @@
                                         class="img-fluid float-right"></div>
                                 <div><img src="assets/AIS Admin Panel Screens/Frame_4.png" alt="AIS Admin Panel"
                                         class="img-fluid float-right"></div>
-                                <div><img src="assets/AIS Admin Panel Screens/frame_5" alt="AIS Admin Panel"
+                                <div><img src="assets/AIS Admin Panel Screens/Frame_5.png" alt="AIS Admin Panel"
                                         class="img-fluid float-right"></div>
-                                <div><img src="assets/AIS Admin Panel Screens/frame_6" alt="AIS Admin Panel"
+                                <div><img src="assets/AIS Admin Panel Screens/Frame_6.png" alt="AIS Admin Panel"
                                         class="img-fluid float-right"></div>
                             </div>
                         </div>
@@ -891,23 +892,17 @@
                     <div class="row report_panel" style="display:none;">
                         <div class="col-12 text-center">
                             <div class="reports_slide_mobile">
-                                <div><img src="./assets/AIS IMGG/Frame_1.png" class="img-fluid ais_img "
-                                        alt="AIS IMGG">
+                                <div><img src="./assets/AIS IMGG/Frame_1.png" class="img-fluid ais_img " alt="AIS IMGG">
                                 </div>
-                                <div><img src="./assets/AIS IMGG/Frame_2.png" class="img-fluid ais_img "
-                                        alt="AIS IMGG">
+                                <div><img src="./assets/AIS IMGG/Frame_2.png" class="img-fluid ais_img " alt="AIS IMGG">
                                 </div>
-                                <div><img src="./assets/AIS IMGG/Frame_3.png" class="img-fluid ais_img "
-                                        alt="AIS IMGG">
+                                <div><img src="./assets/AIS IMGG/Frame_3.png" class="img-fluid ais_img " alt="AIS IMGG">
                                 </div>
-                                <div><img src="./assets/AIS IMGG/Frame_4.png" class="img-fluid ais_img "
-                                        alt="AIS IMGG">
+                                <div><img src="./assets/AIS IMGG/Frame_4.png" class="img-fluid ais_img " alt="AIS IMGG">
                                 </div>
-                                <div><img src="./assets/AIS IMGG/Frame_5.png" class="img-fluid ais_img "
-                                        alt="AIS IMGG">
+                                <div><img src="./assets/AIS IMGG/Frame_5.png" class="img-fluid ais_img " alt="AIS IMGG">
                                 </div>
-                                <div><img src="./assets/AIS IMGG/Frame_6.png" class="img-fluid ais_img "
-                                        alt="AIS IMGG">
+                                <div><img src="./assets/AIS IMGG/Frame_6.png" class="img-fluid ais_img " alt="AIS IMGG">
                                 </div>
                             </div>
                         </div>
@@ -1184,6 +1179,82 @@
     </div>
     <!-- slick slider starts here -->
     <script>
+
+
+        $("documnet").ready(() => {
+
+            $("#admin_slider").owlCarousel({
+                animateIn: true,
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                // nav: true,
+                autoHeight: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 1,
+                    },
+                    1000: {
+                        items: 1,
+                    }
+                }
+            });
+
+            $("#MobileSlider").owlCarousel({
+                loop: true,
+                margin: 10,
+                animateIn: true,
+                responsiveClass: true,
+                autoHeight: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 1,
+                    },
+                    1000: {
+                        items: 1,
+                    }
+                }
+            });
+
+            $("#reports_slide").owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                animateIn: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                autoHeight: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 1,
+                    },
+                    1000: {
+                        items: 1,
+                    }
+                }
+            });
+
+        });
+        function adminPanel() { $("#admin_slider").trigger("to.owl.carousel", [0, 0, true]); }
+        function MobileClick() { $("#MobileSlider").trigger("to.owl.carousel", [0, 0, true]); }
+        function reportsPanel() { $("#reports_slide").trigger("to.owl.carousel", [0, 0, true]); }
+
         $('.slider').slick({
             infinite: true,
             slidesToShow: 1,
@@ -1191,53 +1262,15 @@
             items: 1,
             loop: true,
             smartSpeed: 5000,
+            speed: 200,
             // margin: 5,
+            fade: true,
             autoplay: true,
             autoplayTimeout: 5000,
             autoplayHoverPause: false,
 
         });
-        $('.admin_slider').slick({
-            dots: true,
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            items: 1,
-            loop: true,
-            smartSpeed: 5000,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            autoplayHoverPause: true,
 
-
-        });
-        $('.ais_auditing').slick({
-            dots: true,
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            items: 1,
-            loop: true,
-            smartSpeed: 5000,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            autoplayHoverPause: true
-        });
-        $('.reports_slide').slick({
-            dots: true,
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            items: 1,
-            loop: true,
-            smartSpeed: 5000,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            autoplayHoverPause: true
-        });
 
         $('.admin_slider_mobile').slick({
             dots: true,
@@ -1278,6 +1311,7 @@
             autoplayTimeout: 5000,
             autoplayHoverPause: true
         });
+
 
 
         //////////////////////////////////////////////////////
@@ -1456,7 +1490,7 @@
     <script src="js/jquery.easing.js"></script>
     <script src="js/jquery-waypoints.js"></script>
     <script src="js/jquery-validate.js"></script>
-    <script src="js/owl.carousel.js"></script>
+    <script src="owl/owl.carousel.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/numinate.min-ver=4.9.3.js"></script>
     <script src="js/lazysizes.min.js"></script>

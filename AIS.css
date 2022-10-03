@@ -1287,8 +1287,8 @@ li a {
 
 .ais_img_size {
   max-height: 533px;
-  width: 300;
-  margin-left: 125px
+  width: 55% !important;
+  margin-left: 111px;
 }
 
 @media screen and (max-width:1000px) {
@@ -1362,4 +1362,14 @@ li a {
   font-size: 26px !important;
   content: "\f659";
   padding: 4px !important;
+}
+.owl-nav{
+display: none;
+}
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1.3 !important;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #007bff !important;
 }
